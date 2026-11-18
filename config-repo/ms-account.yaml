@@ -1,0 +1,19 @@
+account:
+  rules:
+    minimum-opening-amount: 0.00
+    vip-minimum-monthly-average: 2000.00
+    fixed-term-allowed-day-of-month: 15
+  clients:
+    timeout: 2s
+  catalog:
+    cache-ttl: 10m
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      customer:
+        sliding-window-type: COUNT_BASED
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s

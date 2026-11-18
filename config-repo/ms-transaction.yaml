@@ -1,0 +1,23 @@
+transaction:
+  fees:
+    savings:
+      free-deposits: 5
+      free-withdrawals: 5
+      deposit-fee: 1.00
+      withdrawal-fee: 1.00
+    current:
+      free-deposits: 20
+      free-withdrawals: 20
+      deposit-fee: 1.00
+      withdrawal-fee: 1.00
+    pyme:
+      free-deposits: 20
+      free-withdrawals: 20
+      deposit-fee: 0.50
+      withdrawal-fee: 0.50
+    fixed-term:
+      free-deposits: 1
+      free-withdrawals: 1
+      deposit-fee: 1.00
+      withdrawal-fee: 1.00
+    current-monthly-maintenance: 10.00
